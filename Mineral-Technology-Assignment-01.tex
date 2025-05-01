@@ -1,0 +1,612 @@
+\documentclass[12pt,a4paper, top=1.9cm, bottom=2.03cm, left=3.81cm, right=1.9cm]{article}
+
+% ---------------- Packages ----------------
+\usepackage{graphicx}
+\usepackage{fancyhdr}
+\usepackage{geometry}
+\usepackage{tikz}
+\usepackage{lipsum}
+\usepackage{setspace}
+\usepackage{titlesec}
+\usepackage{tocloft}
+\usepackage{newtxtext} % Times New Roman font
+\usepackage{enumitem}
+\usepackage{booktabs}
+\usepackage [hidelinks] {hyperref}
+\usepackage{xcolor}
+\usepackage{subcaption}
+\usepackage{fancyhdr}
+% ---------------- Page Geometry ----------------
+\geometry{a4paper, margin=1in}
+
+% ---------------- Page Number ----------------
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot[C]{\thepage}
+\renewcommand{\headrulewidth}{0pt}
+
+\begin{document}
+
+% ---------------- Title Page: No Page Number ----------------
+\pagenumbering{gobble}
+\begin{titlepage}
+    \begin{tikzpicture}[remember picture, overlay]
+        \draw[line width=1pt]
+        ([xshift=10mm,yshift=-10mm]current page.north west) rectangle
+        ([xshift=-10mm,yshift=10mm]current page.south east);
+    \end{tikzpicture}
+
+    \begin{center}
+        \vspace*{1cm}
+        \includegraphics[width=0.3\textwidth]{new.jpeg}\\[2cm]
+        
+        \textbf{\Large NANO - 4232}\\[0.5cm]
+        \textbf{\Large MINERAL TECHNOLOGY}\\[1CM]
+        \textbf{\Large ASSIGNMENT 01}\\[1cm]
+        \textbf{\Large GROUP MEMBERS}\\[1cm]
+        \centering 
+        209017 - Bandara AGNP\\
+        209070 - Gunawardana RMHD\\
+        209079 - Ilukwaththa ISL\\
+        209087 - Jayarathne BSM\\
+        209135 - Mihijaya WAS\\[2cm]
+        \textbf{\Large Department of Nano Science Technology}\\[0.5cm]
+        \textbf{\Large Faculty of Technology}\\[0.5cm]
+        \textbf{\Large Wayamba University of Sri Lanka}\\
+        
+    \end{center}
+\end{titlepage}
+% ---------------- TOC with Subsections ----------------
+
+% ---------------- Front Matter with Roman Page Numbers ----------------
+\clearpage
+\pagenumbering{roman}
+\pagestyle{fancy}
+ % Or fancy, as per your style
+
+\setcounter{tocdepth}{3}
+% ---------------- Table of Contents ----------------
+\addcontentsline{toc}{section}{Table of Contents}
+\tableofcontents
+% ---------------- List of Figures ----------------
+\clearpage
+\addcontentsline{toc}{section}{List of Figures}
+\listoffigures
+
+% ---------------- List of Tables ----------------
+\clearpage
+\addcontentsline{toc}{section}{List of Tables}
+\listoftables
+\newpage
+
+% ---------------- Start Main Content ----------------
+\clearpage
+\pagenumbering{arabic}
+
+
+% ---------------- Sample Content ----------------
+\section{Hematite (Fe\textsubscript{2}O\textsubscript{3})}
+\onehalfspacing
+\noindent\fontsize{12}{14}\selectfont Hematite, a heavy and relatively hard oxide mineral, ferric oxide (Fe\textsubscript{2}O\textsubscript{3}), indicating that it consists of two iron (Fe) atoms bonded to three oxygen (O) atoms and it represents the most significant iron ore due to its elevated iron concentration (70 percent) and its prevalence.
+Its name is derived from the Greek word for "blood", about its reddish color. Many different forms of hematite have separate names. Steel-gray crystalline and coarse-grained varieties have a bright metallic luster and are called specular iron ore; fine-scale varieties are called micaceous hematite.
+Most hematite occurs in a soft, fine-grained, earthy form known as red ochre or ruddle. There are intermediate composite varieties between these types, often with a reniform surface (kidney ore) or a fibrous structure (pencil ore). Red ochre is used as a paint pigment; a purified form, rouge, is used for polishing plate glass.
+Hematite can be found on Mars, in sedimentary layers, hydrothermal veins, weathering and erosion, and contact metamorphism. Sedimentary deposits form as precipitates from water solutions or chemical reactions in aqueous environments, while hydrothermal veins form when hot fluids migrate through fractures in rocks. Contact metamorphism occurs when rocks are subjected to high temperatures and low-pressure conditions near igneous intrusions, forming hematite veins or nodules. Hematite deposits on Mars suggest the past presence of water on the planet's surface.
+\onehalfspacing
+\begin{figure}[h!]
+    \centering
+    \begin{minipage}{0.45\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{Hematite-jpg.jpg}
+    \end{minipage} \hfill
+    \begin{minipage}{0.4\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{Industrial-Uses-of-Hematite-jpeg.jpg}
+    \end{minipage}
+    \caption{Hematite}
+\end{figure}
+\subsection{Genesis of Hematite}
+\onehalfspacing
+\noindent\fontsize{12}{14}\selectfont Depending on the specific environment and conditions, hematite can form through several geological processes. It is important to note that hematite can form in a variety of geologic environments, and the exact formation mechanisms may vary depending on local conditions. The presence of hematite can provide valuable insight into the geologic history and processes that may have occurred in a particular area.
+\begin{enumerate}[label=\arabic*.]  % Arabic numerals with a period after
+    \item \textbf{Banded Iron Formations (BIFs):} Banded iron formations are a significant source of hematite. Banded Iron Formations formed between 3.8 billion and 1.7 billion years ago during the Precambrian. These formations consist of alternating bands of iron-rich minerals, including hematite, and layers of chert or silica-rich minerals. Banded Iron Formations formed in ancient oceans as a result of iron and silica precipitation from seawater, often associated with the activity of iron-oxidizing bacteria. Over time these layers were compacted and lithified into sedimentary rocks.
+    \item \textbf{Hydrothermal Processes:} Hematite can also develop through hydrothermal activity, where heated, mineral-laden fluids flow through cracks or faults in rocks. These fluids often contain dissolved iron and other components. When the temperature of the fluids drops and they interact with the surrounding rock, hematite can crystallize, creating mineral veins or replacing existing deposits. In such settings, hematite is frequently found alongside minerals like quartz, calcite, and sulfide compounds.
+    \item \textbf{Weathering and Oxidation:} Hematite can be formed as a result of the weathering and oxidation of iron-bearing minerals in rocks. When iron minerals are exposed to oxygen and water for long periods, they undergo chemical reactions that convert iron into hematite. This process is particularly prominent in environments with abundant oxygen and moisture, such as tropical or humid climates. Weathering of iron-rich rocks, such as basalt or magnetite-bearing rocks, can lead to hematite-rich soils and sedimentary deposits.
+    \item \textbf{Metamorphic Processes:} Hematite can also form during metamorphism, which is the weathering process of rocks that change temperature and pressure. Under specific conditions, such as contact metamorphism near igneous intrusions, iron-bearing minerals can react and transform into hematite. This metamorphic hematite often occurs in veins or nodules associated with altered rocks.
+\end{enumerate}
+\subsection{ Properties of Hematite}
+\subsubsection{Chemical Properties of Hematite}
+\begin{itemize}[label=\textbullet]  % Circle bullet
+    \item \textbf{Composition:} The chemical formula of hematite is Fe\textsubscript{2}O\textsubscript{3}. It consists of iron (Fe) and three oxygen (O) atoms, with the two iron atoms bonded to three oxygen atoms in each formula unit.
+    \item \textbf{Iron Content:} Hematite, a primary iron ore with a 70 percent iron content, is crucial for iron extraction and steel manufacturing. Its efficient smelting in blast furnaces produces molten iron, essential for construction and infrastructure.
+    \item \textbf{Crystal Structure:} Hematite crystallizes to form rhombohedral crystals in the trigonal crystal system. Its crystal structure is composed of close-packed oxygen atoms with iron ions occupying interstitial sites.
+    \begin{figure}[h!]
+        \centering
+        \includegraphics[width=0.8\textwidth, height=150pt]{Crystal-structure-of-hematite-a-Ball-and-stick-and-b-coordination-polyhedral.png}  % Adjust width and height
+        \caption{Crystal structure of hematite}
+    \end{figure}
+    \item \textbf{Stability:} Hematite is a stable compound under normal conditions. It is resistant to chemical weathering and remains relatively unchanged over the long term.
+    \item \textbf{Redox Properties:} Hematite can undergo redox reactions, meaning it can both donate and accept electrons. In the presence of reducing agents, it can be reduced to form magnetite (Fe\textsubscript{3}O\textsubscript{4}) or metallic iron.
+    \item \textbf{Magnetic Properties:} Hematite, a non-magnetic material, can exhibit weak magnetic properties due to trace magnetite impurities. These properties are valuable in commercial jewelry and therapeutic products but lack scientific validation. These magnetic properties are influenced by incidental magnetite inclusions.
+    \item \textbf{Acid-Base Behavior:} Hematite is insoluble in water and most acids. It is stable and unaffected by weak acids such as dilute hydrochloric acid or sulfuric acid. However, concentrated acids and strong alkalis can attack and disintegrate hematite over time.
+    \item \textbf{Reactivity:} Under the right conditions, it can react with various chemicals. For example, it can react with carbon monoxide (CO) to produce iron metal and carbon dioxide (CO\textsubscript{2}) in a process known as hematite reduction.
+\end{itemize}
+\newpage
+\subsubsection{Physical Properties of Hematite}
+\begin{table}[h]
+\centering
+\begin{tabular}{ll}
+\toprule
+\textbf{Property}& \textbf{Value} \\ 
+\midrule
+Color & Metallic gray, dull to bright red \\ 
+Streak & Bright red to dark red \\ 
+Luster & Metallic to splendent \\ 
+Cleavage & None \\ 
+Diaphaneity & Opaque \\ 
+Mohs Hardness & 6.5 \\ 
+Specific Gravity & 5.26 \\
+Diagnostic Properties & Magnetic after heating \\
+Crystal System & Trigonal \\
+Tenacity & Brittle \\
+Fracture & Irregular/Uneven, Sub-Conchoidal \\
+Density & 5.26 g/cm\textsuperscript{3} (Measured) 5.255 g/cm\textsuperscript{3} (Calculated) \\
+\bottomrule
+\end{tabular}
+\caption{Physical properties of Hematite}
+\end{table}
+\subsubsection{Optical Properties of Hematite}
+\begin{table}[h]
+\centering
+\begin{tabular}{{@{} l p{8cm} @{}}}
+\toprule
+\textbf{Property}& \textbf{Value} \\ 
+\midrule
+Anisotropic & Distinct \\
+Color / Pleochroism & brownish-red to yellowish-red \\
+Twinning & Penetration twins on {0001}, or with {1010} as a composition plane. Frequently exhibits a lamellar twinning on {1011} in polished section. \\
+Optic Sign & Uniaxial (–) \\
+Relief & Very High \\
+\bottomrule
+\end{tabular}
+\caption{Optical Properties of Hematite}
+\end{table}
+\subsection{Metals Extracted from Hematite}
+\subsubsection{Primary Metal: Iron}
+\noindent\fontsize{12}{14}\selectfont Iron (Fe) is the primary metal extracted from hematite ore, which is mined through open-pit or underground methods. The ore is crushed and subjected to beneficiation processes to increase iron concentration and remove impurities. Common beneficiation methods include gravity separation, flotation, magnetic separation, magnetic separation followed by roasting, and various combined separation methods. The concentrated hematite ore is smelted in a blast furnace, where the chemical reduction of iron oxide to metallic iron occurs. The blast furnace mixes hematite ore with coke, a form of carbon, and limestone, which serves as a reducing agent.
+\newpage
+\[
+2C + O_2 \rightarrow 2CO
+\]
+\noindent\fontsize{12}{14}\selectfont The main chemical reaction involves carbon monoxide reacting with hematite to yield molten iron and carbon dioxide.
+\[ Fe_2O_3 + 3CO\rightarrow 2Fe +3CO_2 \]
+\noindent\fontsize{12}{14}\selectfont Simultaneously, limestone decomposes to quicklime (CaO), which reacts with silica impurities to form slag (CaSiO₃):
+\[CaCO_3→CaO+CO_2\]
+\[CaO +SiO_2→CaSiO_3\]
+\noindent\fontsize{12}{14}\selectfont The initial product is pig iron, a relatively impure form of iron with significant carbon and other impurities. To obtain steel, pig iron undergoes further refining in processes such as basic oxygen furnaces (BOF) or electric arc furnaces (EAF), where impurities are removed and other elements can be added to form various steel alloys.
+\[2C+O_2→2CO (removed as gas)\]
+\[Si+O_2→ SiO_2(slag)\]
+\noindent\fontsize{12}{14}\selectfont The EAF process, used for recycling scrap steel, similarly reduces iron oxides:
+\[Fe_2O_3+C→2Fe+CO\]
+\noindent\fontsize{12}{14}\selectfont 
+The result is pure steel (0.02–2\% carbon), tailored for industrial applications.
+\subsubsection{Associated Metals and Byproducts}
+\vspace{0.5cm}
+\noindent\fontsize{12}{14}\selectfont Hematite typically coexists with a variety of minerals, which serve as the marker of the different geological environments in which it develops. The iron oxides, such as magnetite, goethite, and iron carbonate, and the silica minerals like quartz, chert, ilmenite, rutile, calcite, pyrite, chamosite, and stilpnomelane, represent some of the common coexistent minerals. Iron is the primary metal extracted from hematite, but some associated minerals may also bear other beneficial metals that are extractable as by-products.
+\clearpage
+\noindent\fontsize{12}{14}\selectfont Manganese (Mn) is associated with iron ore, including hematite. Titanium (Ti) often appears as an impurity in ilmenite, either with hematite or as a constituent of the hematite mineral structure. Iron tailings, a product that is created during the process of beneficiation, may contain other metals of utility such as copper, nickel, and cobalt. The occurrence of hematite in association with other iron minerals suggests that they have a tendency to precipitate in the same geological environments but under different oxygen availability and other conditions, one mineral or the other will precipitate. Efforts to make the best use of resources and reduce waste by recovery of by-products such as slag and blast furnace gas in iron extraction are being demonstrated.
+\newpage
+\section{Galena}
+\noindent\fontsize{12}{14}\selectfont Galena is a sulfide mineral of lead with the formula PbS. It is the chief ore of lead on Earth and occurs in many deposits worldwide. Galena occurs in igneous and metamorphic rocks under normal conditions, but in hydrothermal veins of medium- to low-temperature. Galena occurs as veins within sediments, in breccia cements, disseminated grains, or as a replacement of dolostone and limestone.
+\begin{figure}[h!]
+        \centering
+\includegraphics[width=0.5\textwidth, height=150pt]{Galena-PbS-61-cm-is-a-common-mineral-yet-this-specimen-from-one-of-the.png}  % Adjust width and height
+        \caption{Galena}
+    \end{figure}
+\noindent\fontsize{12}{14}\selectfont Galena is also easy to identify. With good separation, it exhibits intact cleavage in three planes that meet at 90 degrees. It exhibits a metallic luster that's bright with a sharp silvery color, though tending to turn dull gray when weathered. Since lead is such a dominant component of galena, the mineral is very dense with a high specific gravity of 7.4 to 7.6 that can be readily recognized even in small amounts. Galena is a relatively soft mineral that has a Mohs hardness of around 2.5+ and produces a gray to black streak upon scratching. Its crystals are common and occur as cubes, octahedrons, or a combination of the two.
+\subsection{Structure of Galena}
+\begin{figure}[h!]
+        \centering
+\includegraphics[width=0.5\textwidth, height=150pt]{fr.png}  % Adjust width and height
+        \caption{Structure of galena}
+    \end{figure}
+
+\noindent\fontsize{12}{14}\selectfont The chemical formula for Galena is PbS. That is, it contains an equal number of lead and sulfide ions. The ions are cubic in pattern and are repeated in all directions. It is this pattern that forms crystals of galena cubic in shape and causes galena to break along three directions at right angles.
+\subsection{Genesis of Galena (PbS)}
+\noindent\fontsize{12}{14}\selectfont Galena (PbS) usually deposits due to hydrothermal activity, particularly in the low- to medium-temperature environments. Galena precipitates from lead-bearing fluids that are flowing through fracture systems and porous rocks related to geological activity. The fluids move up from beneath the Earth's crust and, as they cool and come in contact with rocks or fluids rich in sulfur, galena settles out.
+
+\noindent\fontsize{12}{14}\selectfont Galena commonly finds its way to:
+\begin{itemize}[label=\textbullet]  % Circle bullet
+\item Hydrothermal vein deposits, accompanied by other minerals such as sphalerite (ZnS) and chalcopyrite (CuFeS\textsubscript{2}). Galena commonly precipitates from hot, mineral-rich fluids circulating through fractures and voids in rocks. These hydrothermal fluids, often associated with igneous activity, carry dissolved lead and sulfur. As the fluids cool or react chemically with surrounding rocks, galena crystallizes, frequently alongside minerals like sphalerite and chalcopyrite. Notable examples include the Lead Belt in Missouri, USA, and the Broken Hill deposit in Australia.
+\item Sedimentary exhalative (SEDEX) deposits, where hydrothermal fluids that are exhaled onto the seafloor lead to precipitation of the lead-sulfide minerals. In sedimentary settings, galena can form at lower temperatures through chemical reactions between lead-bearing solutions and sulfur sources such as organic matter. This process is characteristic of Mississippi Valley-Type (MVT) deposits, where galena is often found in limestone and dolostone formations.
+\item Mississippi Valley-Type (MVT) deposits, in dolostone and limestone host rocks, where galena forms from basinal brines. Occasionally, galena forms during the metamorphism of lead-bearing sedimentary rocks subjected to high pressure and temperature. This process can recrystallize existing lead minerals into galena within metamorphic terrains.
+\end{itemize}
+\newpage
+\subsection{Properties of Galena}
+\subsubsection{Chemical Properties of Galena}
+\begin{table}[h]
+\centering
+\begin{tabular}{{@{} l p{8cm} @{}}}
+\toprule
+\textbf{Property}& \textbf{Description} \\ 
+\midrule
+Chemical Formula & PbS (Lead Sulfide)\\
+Molecular Weight & 239.27 g/mol\\
+Crystal System & Cubic \\
+Hardness & 2.5 on Mohs scale – relatively soft, easily scratched \\
+Color & Bluish-gray to silver; may tarnish to dull gray \\
+Streak & Gray-black \\
+Cleavage & Perfect cubic cleavage in three directions \\
+Luster & Metallic – shiny and reflective like metal \\
+Transparency & Opaque – does not transmit light \\
+\bottomrule
+\end{tabular}
+\caption{Chemical Properties of Galena}
+\end{table}
+% chemical properties in here
+\subsubsection{Physical Properties Galena}
+\begin{table}[h]
+\centering
+\begin{tabular}{{@{} l p{8cm} @{}}}
+\toprule
+\textbf{Property}& \textbf{Description} \\ 
+\midrule
+Density & Approximately 7.4 to 7.6 g/cm\textsubscript{3} – notably dense\\
+Specific Gravity & Around 7.2 to 7.6, depending on impurities\\
+Melting Point &Around 1,114°C (2,037°F) – relatively low\\
+Boiling Point & No distinct boiling point; decomposes before boiling \\
+Solubility & Insoluble in water; dissolves in nitric acid (HNO\textsubscript{3}) \\
+\bottomrule
+\end{tabular}
+\caption{Physical Properties of Galena}
+\end{table}
+%Optical Properties in here
+\subsubsection{Optical Properties of Galena}
+\begin{table}[h]
+\centering
+\begin{tabular}{{@{} l p{8cm} @{}}}
+\toprule
+\textbf{Property}& \textbf{Description} \\ 
+\midrule
+Refractive Index & Not applicable – opaque mineral\\
+Birefringence & None – isotropic with uniform properties\\
+Dispersion &Not observed – does not split light into colors\\
+Pleochroism & Absent – does not show color change from different angles \\
+\bottomrule
+\end{tabular}
+\caption{Optical Properties of Galena}
+\end{table}
+\subsection{Metals extracted of Galena}
+\subsubsection{Lead (Pb)}
+\begin{enumerate}[label=\arabic*.]  % Arabic numerals with a period after
+    \item The largest source of lead is galena and has about 86.6\% lead by weight.
+    \item Lead has been extracted and used for millennia because it has a low melting point, is soft, and is ductile.
+    \item Uses of Lead:
+    \begin{itemize}[label=\textbullet]  % Circle bullet
+    \item Lead-acid batteries (the largest current use).
+    \item Radiation shielding (e.g., in medical X-ray equipment and nuclear reactors).
+    \item Ammunition (e.g., bullets and shot).
+    \item Weights and counterweights.
+    \item Formerly used in plumbing, paints, solder, and as an antiknock in gasoline (uses now substantially reduced or discontinued due to toxicity).
+    \item Historically, galena crystals were used as semiconductors in prewire less communication systems (crystal radio sets).
+    \end{itemize}
+\end{enumerate}
+\subsubsection{Silver (Ag)}
+\begin{itemize}[label=\textbullet]  % Circle bullet
+    \item Galena typically contains silver as impurities, either as included silver sulfide mineral phases or as a solid solution in the galena structure.
+    \item The silver content value can exceed that of lead in some deposits, and this makes it a significant silver ore. Such a galena is called argentiferous galena.
+    \item Virtually all silver-bearing galena is of hydrothermal origin.
+\end{itemize}
+\subsection{Extraction Process}
+\noindent\fontsize{12}{14}\selectfont The process of extracting lead from galena has several steps:
+\begin{enumerate}[label=\arabic*.]  % Arabic numerals with a period after
+ \item \textbf{Mining and Concentrating:} Galena ore is mined and concentrated subsequently to separate it from other minerals. It could involve crushing, grinding, and flotation procedures.
+ \item \textbf{Smelting:} The concentrated galena (lead sulfide) is then smelted at high temperatures to convert it into lead oxide and then metallic lead. Different smelting techniques (indirect and direct) could be used.
+ \item \textbf{Refining:} The resulting "base bullion" of 95-99\% lead with impurities is then refined to remove such impurities like copper, antimony, and bismuth to produce high-purity lead. If silver content is substantial, it also gets recovered in the refining process
+\end{enumerate}
+\newpage
+% magnetite here
+\section{Magnetite (Fe\textsubscript{3}O\textsubscript{4})}
+\onehalfspacing
+\noindent\fontsize{12}{14}\selectfont Magnetite is a main iron oxide mineral that holds significant scientific and industrial importance. Natural magnetized specimens are known as lodestones. Magnetite is critically important in the modern era as a major iron ore, serving as a primary raw material for steel production.
+\begin{figure}[h!]
+        \centering
+        \includegraphics[width=0.7\textwidth, height=200pt]{Magnetite-118736.jpg}  % Adjust width and height
+        \caption{Magnetite}
+    \end{figure}
+    
+\noindent\fontsize{12}{14}\selectfont Magnetite is a very common mineral found in a wide variety of rock types, in igneous and metamorphic environments. This belongs to the spinel group and exhibits chemical relationships with other minerals such as ilmenite, hematite, and hercynite. Also, it can incorporate several elements into its structure, including titanium (Ti), manganese (Mn), magnesium (Mg), zinc (Zn), nickel (Ni), aluminum (Al), chromium (Cr), and vanadium (V). This usually forms crystals in the shape of octahedrons (two pyramids joined at the base), and sometimes in dodecahedron shapes (with 12 flat faces). Magnetite can have some special types like oolitic, even appearing as very small cubes.
+
+\vspace{1cm}
+\noindent\fontsize{12}{14}\selectfont The magnetite can change into martite, which is a form of hematite. During this change, magnetite loses its magnetic properties and becomes harder making it harder to separate the ore using magnets. Also, another form like thermite is a mixture of finely pulverized magnetite and aluminum. This mixture burns, produces a lot of heat, and makes molten iron and aluminum oxide. In the following section, I will discuss the genesis, properties, and metal extraction of magnetite.
+\newpage
+\subsection{Genesis of Magnetite}
+\noindent\fontsize{12}{14}\selectfont The magnetite mineral is formed from the layers of rocks in the earth’s crust that contain volcanic ashes. When ash settles, the atoms start to move, and electrons create friction that cause gives the magnetic property to the magnetite. Magnetite is found in igneous, metamorphic, and sedimentary rocks. This has the highest iron content (72.4\%). 
+
+\noindent\fontsize{12}{14}\selectfont Magnetite form is a result of various geological approaches including igneous, metamorphic, sedimentary, and hydrothermal settings. Also, specific conditions involve formations of magnetite such as temperature, pressure, oxygen, and composition of surrounding fluids. 
+\subsubsection{Igneous Genesis}
+\noindent\fontsize{12}{14}\selectfont Magnetite forms as a small part of many igneous rocks like those of mafic composition, such as gabbro, basalt, and peridotite. When magma cools slowly, allows magnetite to grow and sink to the bottom through called magnetic segregation.
+\begin{itemize}[label=\textbullet]  % Circle bullet
+\item The titanomagnetite forms a solid solution between magnetite and ulvospinal. This contains both iron and titanium.
+\item This also be present as granite pegmatites, which form during the late stages of magma crystallization.
+\end{itemize}
+\subsubsection{Metamorphic Genesis}
+\noindent\fontsize{12}{14}\selectfont When existing rocks are subject to high heat and pressure, magnetite can form. This called as metamorphic process.
+\begin{itemize}[label=\textbullet]  % Circle bullet
+\item Contact metamorphism – when magma intrudes existing rocks, this leads to the form of magnetite, particularly in impure iron-rich limestones.
+\item Regional metamorphism – this affects large areas due to changes in temperature and pressure and can lead to magnetite formation.
+\item Serpentinization – a process involving the hydrothermal alteration of ultramafic rocks.
+\end{itemize}
+\noindent\fontsize{12}{14}\selectfont In this genesis, magnetite can be found alongside minerals like pyrrhotite, pyrite, chalcopyrite, pentlandite, sphalerite, hematite, and various silicate minerals. This formation of magnetite is influenced by the composition of the original rock and the intensity of the metamorphic conditions.
+\subsubsection{Hydrothermal Genesis}
+\begin{itemize}[label=\textbullet]  % Circle bullet
+\item These can be found near rocks changed by contact metamorphism and in sulfide vein deposits. 
+\item The chemical composition of hydrothermal magnetite can help in the discovery of valuable ore deposits.
+\item Hydrothermal magnetite typically has more magnesium (Mg) and less vanadium (V) than magnetite that comes from magma.
+\item Sometimes, under special conditions, it forms rounded, ball-like shapes.
+\item The formation of magnetite depends on the type and temperature of the hydrothermal fluids.
+\item Studying hydrothermal magnetite is important in understanding how ore deposits form.
+\end{itemize}
+\subsubsection{Sedimentary Genesis}
+\begin{itemize}[label=\textbullet]  % Circle bullet
+\item During the early Proterozoic Eon, banded iron formations (BIFs) developed, and the magnetite precipitated from iron-rich seawater under low oxygen conditions. 
+\item Magnetite can be found as detrital grains in black sands or heavy sands.
+\item Some living organisms like bacteria and orcas can produce magnetite called magneto fossils. 
+\end{itemize}
+\newpage
+\subsection{Properties of Magnetite}
+\subsubsection{Physical Properties of Magnetite}
+\noindent\fontsize{12}{14}\selectfont This exhibits a district set of physical properties, including macroscopic characteristics such as color, luster, hardness, density, cleavage, fracture, streak, crystal structure, and transparency.
+\begin{table}[h]
+\centering
+\begin{tabular}{{@{} l p{8cm} @{}}}
+\toprule
+\textbf{Property}& \textbf{Value} \\ 
+\midrule
+Color & Black, grayish black, iron black, sometimes brownish tint \\
+Luster & Metallic to submetallic, can be dull \\
+Hardness (Mohs) & 5.5 - 6.5\\
+Density & 5.1 - 5.2 g/cm \textsubscript{3}\\
+Specific Gravity & 4.9 - 5.2 \\
+Cleavage & None, parting on {111} (very good) \\
+Fracture & Uneven to sub conchoidal, brittle \\
+Streak & Black \\
+Transparency & Opaque, translucent in very thin edges \\
+Crystal System & Isometric (Cubic) \\
+Crystal Class & Hexoctahedral (m3m) \\
+Crystal Habit & Typically octahedral, also dodecahedral, massive, granular\\
+Special Property & Strongly magnetic (ferrimagnetic) \\
+\bottomrule
+\end{tabular}
+\caption{Physical Properties of Magnetite}
+\end{table}
+\subsubsection{Magnetite Properties of Magnetite}
+\noindent\fontsize{12}{14}\selectfont Magnetite has strong magnetic properties, and key magnetic characteristics including ferrimagnetism, Curie temperature, magnetic susceptibility, and behavior in the form of lodestone.
+\begin{table}[h]
+\centering
+\begin{tabular}{{@{} l p{8cm} @{}}}
+\toprule
+\textbf{Property}& \textbf{Value} \\ 
+\midrule
+Magnetic Behavior& Ferrimagnetic, strongly attracted to magnets \\
+Curie Temperature & ~575-585 \textsubscript{0}C (850-858 K) \\
+Hardness (Mohs) & 5.5 - 6.5\\
+Magnetic Susceptibility & High \\
+Lodestone & Naturally magnetized magnetite attracts iron \\
+Magnetic Structure & Inverse spinel, antiparallel spin alignment, net magnetic moment \\
+\bottomrule
+\end{tabular}
+\caption{Physical Properties of Magnetite}
+\end{table}
+\newpage
+\subsection{Metal Extraction}
+\noindent\fontsize{12}{14}\selectfont The most commonly used method for magnetite separation is weak magnetic separation. However, pure magnetite is rare in nature. Most of the time, magnetite is found mixed with other minerals. Because of that several methods are used for separation.
+\subsubsection{Single magnetic separation method}
+\noindent\fontsize{12}{14}\selectfont This method is suitable for magnetite ore with strong magnetism, simple mineral composition, and ease of grinding.
+\subsubsection{Weak magnetic separation – Flotation method}
+\noindent\fontsize{12}{14}\selectfont Magnetite ore contains impurities like silicate, sulfide, or apatite, the single magnetic separation cannot be used because of concentrated impurities. In such cases, a combination of weak magnetic separation and reverse flotation is used. In here, magnetic separation recovers iron and flotation removes sulfide or apatite.
+\subsubsection{Magnetization calcination method}
+\noindent\fontsize{12}{14}\selectfont For weakly magnetic iron oxide mixed ores like hematite or limonite, the magnetization calcination method is applied. Here, the ore is heated to convert weakly magnetic minerals to strong magnetite so that separation becomes easy in a weak magnetic field using a magnetic separator. This method strengthens the magnetism of the iron minerals but minimally affects the gangue minerals.
+\subsubsection{Combined beneficiation method}
+\noindent\fontsize{12}{14}\selectfont This technique is employed for polymetallic magnetite ores where metal minerals like pyrite or chalcopyrite are accompanied by gangue minerals like quartz or chlorite. This process encompasses several steps: original gravity separation is utilized to treat gangue minerals, then magnetic separation is used to recover the iron minerals and finally flotation is utilized to recover the accompanying metal constituent. This tandem technique is effective for complicated ores with fine constituent particles.
+\subsubsection{Stages of Extraction}
+\noindent\fontsize{12}{14}\selectfont Before separation, mining and ore preparation are the initial steps. Magnetite ore is usually mined through open-pit or underground mining operations. These methods involve drilling and blasting to break the ore and transport it to the processing plant for iron separation. The separation process of the material can be divided into 4 stages. The discovered or mined magnetite can be used to extract iron through the following stages.
+\begin{enumerate}[label=\arabic*.]  % Arabic numerals with a period after
+    \item \textbf{Crushing and Screening: -} The raw ore magnetite is two-stage crushed by making the ore pass through a coarse crusher (like a jaw crusher) and then through a fine crusher (like a cone or hammer crusher). Screening is done after fine crushing, with smaller sizes moving to the subsequent stage and larger ones being sent back for re-crushing.
+    \item \textbf{Grinding and Classification: -} The crushed ore is ground in a ball mill to separate the magnetite from gangue minerals. The ground material is classified with the help of a spiral classifier. If the particle size is too large, it is sent back for grinding.
+    \item \textbf{Separation: -} The ore is subsequently treated through magnetic separation, in which the magnetic minerals are separated to obtain a coarse concentrate. The concentrate is then subjected to secondary separation to obtain the final iron concentrate, while tailings are rejected. For complex ores, additional methods like gravity separation, flotation, or calcination might be used.
+    \item \textbf{Magnetite Dehydration: -} After separation, the iron contains the water, so it goes through dehydration. The slurry is going to thickener to remove excess water and then concentrate is dried to obtain a powder. The result is concentrated with a recovery rate of up to 80\%, depending on the ore’s characteristics. 
+    
+\end{enumerate}
+\subsubsection{Smelting of Magnetite in a Blast Furnace}
+\begin{figure}[h!]
+        \centering
+        \includegraphics[width=0.5\textwidth, height=150pt]{sensors-22-04526-g001-550.jpg}  % Adjust width and height
+        \caption{Blast Furnace}
+    \end{figure}
+\noindent\fontsize{12}{14}\selectfont The blast furnace is used to chemically turn concentrated ore into liquid metal. This is a large steel furnace lined with heat-resistant bricks. Iron ore, coke, and limestone are added from the top, and hot air flows from the bottom. The main ingredients are crushed into small pieces, mixed, and added to a hopper that controls the input. The hot air burned coke and created temperatures up to about 2200K. At this temperature, coke reacts with oxygen in the hot air and forms carbon monoxide (CO). The CO and heat meet the raw materials coming down from the top. The top of the furnace has a much lower temperature, where magnetite is reduced to ferrous oxide (FeO).
+\noindent\fontsize{12}{14}\selectfont At 500 – 800 K, In the upper part with low temperature,
+\[Fe_3O_4 + CO \rightarrow 3 Fe + CO_2\]
+\noindent\fontsize{12}{14}\selectfont At 900 – 1500 K, In the lower part,
+\[C + CO_2\rightarrow2CO\]
+\newpage
+\section{Chromite}
+\noindent\fontsize{12}{14}\selectfont Chromite (FeCr \textsubscript{2}O \textsubscript{4}) is the major ore of chromium – a metal of critical application to stainless steel, specialty alloys, and plating. It is an oxide mineral of the spinel group (isometric crystal system) and is most frequently linked with mantle-derived igneous rocks. Chromite is of economic importance in that it is high in chromium content and is the only viable source of Cr metal.
+\begin{figure}[h!]
+        \centering
+        \includegraphics[width=0.5\textwidth, height=150pt]{download.jpeg}  % Adjust width and height
+        \caption{Chromite}
+    \end{figure}
+
+\subsection{Genesis of Chromite Deposits}
+\noindent\fontsize{12}{14}\selectfont Chromite is formed by magmatic segregation or crystallization in some environments. Stratiform (layered intrusion) and podiform (ophiolite) deposits are the two major forms of deposits, with a minor representation in heavy-mineral placer (beach sand) deposits.
+\begin{enumerate}[label=\arabic*.]  % Arabic numerals with a period after
+    \item \textbf{Stratiform (Layered Intrusions) –} These tabular to funnel-shaped ultramafic–mafic intrusions (typically Precambrian) cooled slowly at depth, with early crystallizing chromite crystals settling into discrete layers or seams. Some exceptional examples include Bushveld Complex (South Africa), Great Dyke (Zimbabwe), Stillwater Complex (USA), and Kemi Complex (Finland). In layered cumulates, individual chromitite (chromite-rich) layers may be centimeters to meters thick and tens of kilometers in lateral extent. Most of the world's chromium reserves are in such stratiform ore, which is commonly 50–90\% chromite in the ore mined.
+    \item \textbf{Podiform (Ophiolitic) Deposits –} Occur in slices of ancient oceanic lithosphere (ophiolites) thrust onto continents. There, the chromite forms as little, irregular "pods" or lenses in ultramafic rocks (dunites and peridotites) of oceanic mantle sequences. Podiform chromitites form in supra-subduction or mid-ocean ridge settings; they tend to be smaller (up to ~10 million tonnes) and high in Cr₂O₃ grades (~42–459\%). Large podiform deposits are found in Kazakhstan, the Philippines, Russia, Zimbabwe, Cyprus, and Turkey. Chromite is dispersed in serpentinite or tectonite in these ophiolite complexes and is not as strongly stratified as it would be in stratiform deposits.
+    \item \textbf{Placer (Beach Sand) Deposits –}Weathering of chromite-bearing ultramafic rocks produces durable chromite grains that accumulate in heavy-mineral sands. Because chromite is relatively resistant to weathering and has high specific gravity, it concentrates in soils, streams, and coastal sands. Economic beach placer deposits have been mined historically (for example, in Sri Lanka and India) by separating chromite from lighter minerals in the sand.
+\end{enumerate}
+\subsection{Properties of Chromite}
+\noindent\fontsize{12}{14}\selectfont Chromite is a dense, iron–chromium oxide with distinctive physical and chemical properties.
+\subsubsection{Physical Properties of Chromite}
+\begin{itemize}[label=\textbullet]  % Circle bullet
+\item \textbf{Color:} Chromite tends to be black or brownish-black in color, making it easy to distinguish from many other minerals.
+\item \textbf{Luster:} The material exhibits a submetallic to metallic sheen, indicating that it reflects light, albeit not as intensely as that of pure metals.
+\item \textbf{Hardness:} It is approximately 5.5 on the Mohs scale, so it is fairly hard — you can scratch it with harder material like quartz.
+\item \textbf{Density:} Chromite is heavy (around 4.5–5.1 g/cm³), so it will feel much heavier than most everyday rocks or minerals.
+\item \textbf{Crystal System:} It is a member of the isometric (cubic) crystal system and typically forms as octahedral crystals or as dense, granular masses.
+\item \textbf{Streak:} When rubbed on a rough porcelain plate, chromite leaves a brown streak, thus identifying it.
+\item \textbf{Cleavage and Fracture:} Does not show true cleavage (i.e., it does not break along plane surfaces) and breaks with a rough to moderately shell-like (subconchoidal) surface.
+\item \textbf{Opacity:} Chromite is opaque, meaning that no light can pass through it, even in thin sections.
+\end{itemize}
+\subsubsection{Chemical Properties of Chromite}
+\begin{itemize}[label=\textbullet]  % Circle bullet
+\item \textbf{Major Constituent:} Chromite primarily consists of chromium oxide (Cr₂O₃) and iron oxide (FeO) and, at times, magnesium or aluminum oxides.
+\item \textbf{Chemical Stability:} It is extremely corrosion- and oxidation-resistant, even at high temperatures, and therefore very long-lasting under severe conditions.
+\item \textbf{Weathering Resistance:} Under normal surface conditions, chromite is stable and changes little to other minerals over long durations.
+\item \textbf{Reactivity:} Under conditions where strong oxidizing agents are prevalent, for example, in acidic solutions or oxygen-rich water systems, chromium may be freed from chromite and subsequently establish other chromium-bearing minerals.
+\item \textbf{Industrial Behavior:} Owing to its high chemical resistance, chromite is widely used in high-temperature furnaces, metal production, and corrosion-resistant materials.
+\end{itemize}
+\subsection{Metals Extracted from Chromite}
+\noindent\fontsize{12}{14}\selectfont Chromite ore is mostly extracted for its content of chromium (Cr). The chromium constitutes 40–50\% of the chromite oxide (as Cr₂O₃) and is extracted by smelting to yield ferrochromium, an iron–chromium alloy. Chromite concentrates with 40–50\% Cr₂O₃ are reduced in electric furnaces with carbon to give ferrochrome (Fe–Cr alloy). The ferrochrome's chromium is used in stainless steel manufacture and other corrosion-resistant alloys. Chromium metal is also obtained through the electrolytic purification of chromic oxide or ferrochrome. Iron (Fe) present in chromite is incorporated into the ferrochrome alloy, so the principal product is ferrochrome, typically with a content of around 50\% chromium.
+
+\noindent\fontsize{12}{14}\selectfont In addition to chromium, chromite ore can carry valuable by-products:
+
+\noindent\fontsize{12}{14}\selectfont Platinum-group elements (PGEs) are commonly associated with large stratiform chromite deposits, e.g., the Bushveld Complex and the Great Dyke, where they are present in disseminated form in sulfide or mineral inclusions. The PGEs are not normally extracted directly from chromite but are commonly recovered as by-products from the respective chromitite ore zones or adjacent sulfide ores. For example, the Bushveld chromitites carry laurite, cooperite, and other PGE minerals.
+\noindent\fontsize{12}{14}\selectfont Other trace elements: Some chromite ores contain minor vanadium or nickel, which may be recovered if present in economic amounts. Vanadium has also been recovered from ferrochrome slag in certain chromite operations in the past. These are relatively minor compared to chromium production.
+\newpage
+\section{Bauxite}
+\noindent\fontsize{12}{14}\selectfont Aluminum is the most abundant metal found in Earth crust. The key raw material mined from ground is the Bauxite. Bauxite is the main aluminum ore that is composed of minerals diaspore - α-AlO(OH), boehmite - γ-AlO(OH) and gibbsite - Al(OH)\textsubscript{3}, mixed with the iron oxides goethite and hematite, with the clay mineral kaolinite and, in small amounts, anatase – TiO\textsubscript{2} and other minerals. Bauxite was originally found in town of Les Baux in southern France. Australia is the world’s largest bauxite producer which that they mine more than 100Mt of bauxite a year which is quarter of global production. Brazil, India, Indonesia, Jamaica, Russia are other countries that produce bauxite. Mineralogically bauxites are classified into five types depending on predominant alumina minerals as following,
+\begin{enumerate}[label=\arabic*.]  % Arabic numerals with a period after
+    \item Pure gibbsitic bauxite
+    \item Gibbisitic bauxite containing quartz
+    \item Mixed gibbsitic-boehmitic bauxite 
+    \item Boehmiti bauxite 
+    \item Diasporic bauxite
+\end{enumerate}
+\noindent\fontsize{12}{14}\selectfont Depending on how and where they form, there are two types of bauxites as Karst bauxites and Lateritic bauxites.
+\begin{itemize}[label=\textbullet]  % Circle bullet
+\item \textbf{Karst bauxites} are formed on carbonate rocks like Limestone and Dolomites by lateritic weathering and residual accumulation of intercalated clays or by residues from that dissolution of clays contained in carbonated rocks. Karst bauxites occur in Europe and Jamaica. 
+\item \textbf{Lateritic bauxites} are formed by laterization of various types of silicate rocks such as basalt, gneiss, shale and granite. Lateritic bauxites occur in tropics.
+\end{itemize}
+\noindent\fontsize{12}{14}\selectfont Bauxite is a soft material with a harness of only 1 on 3 to Mohs scale. It has gray to reddish brown color with pisolitic structure and earthy luster with specific gravity ranging between 2.0 -2.5.
+\begin{figure}[h!]
+        \centering \includegraphics[width=0.4\textwidth, height=120pt]{Bauxite Stockpile – Juruti, Brazil.png}  % Adjust width and height
+        \caption{Bauxite Stockpile – Juruti, Brazil}
+    \end{figure}
+\newpage
+\noindent\fontsize{12}{14}\selectfont Primary aluminum demand depends on supply of bauxite from mentioned countries. As the demand for aluminum is expected to be increased up to 88Mt by 2050, there will be growth in both alumina and bauxite markets significantly. Even though Australia supplies most of the bauxite, China is the leading global aluminum supplier, accounting for more than 60\% of the market.
+\begin{figure}[h!]
+    \centering
+    \begin{minipage}[t]{0.45\textwidth}
+        \centering
+        \includegraphics[width=\textwidth,height=5cm]{2}\\
+        \caption{Primary Aluminum Consumption by Region, 2019–2050}
+    \end{minipage}
+    \hfill
+    \begin{minipage}[t]{0.45\textwidth}
+        \centering
+        \includegraphics[width=\textwidth,height=5cm]{3.png}\\
+        \caption{Bauxite Mining Site}
+    \end{minipage}
+\end{figure}
+\subsection{Genesis of Bauxite}
+\noindent\fontsize{12}{14}\selectfont More than 90\% of bauxite reserves are located in tropical and sub-tropical regions around the world. The deposits are usually found close to the surface and they may spread large areas up to hundreds of square Kilometers. Thickness of deposits usually range from 4-6 meters, but there may be even less than 1 m. Bauxite is an off-white, grayish, brown, yellow or reddish-brown rock as shown in below.
+\begin{figure}[h!]
+        \centering \includegraphics[width=0.45\textwidth, height=150pt]{46674-42.jpg}  % Adjust width and height
+        \caption{Bauxite Ore}
+    \end{figure}
+\noindent\fontsize{12}{14}\selectfont Bauxite is a sedimentary ore rich in aluminum, composed mainly of the hydroxide minerals gibbsite (Al(OH)₃), boehmite (γ-AlO(OH)) and diaspore (α-AlO(OH)). It typically contains iron oxides (goethite, hematite) and clay (kaolinite) as residual impurities. These aluminum oxides are the products of intense chemical weathering. In tropical and subtropical climates, heavy rainfall and heat leach out silica and other soluble components from rocks, leaving behind the relatively insoluble aluminum hydroxides. In effect, modern bauxite deposits are “fossil” laterite soils: prolonged tropical weathering strips away most of the original rock’s constituents, concentrating Al‐hydroxides (with some Fe‐oxides) in place.
+Such conditions — very high rainfall and warm temperatures — are a near‐requirement for large bauxite deposits in addition, good drainage is essential: soils must remain leached (so dissolved silica is carried off) rather than waterlogged. Geologists traditionally distinguish two main types of bauxite based on setting and origin. Karst bauxites (also called carbonate or residual bauxites) occur on limestone or dolomite foundations, while lateritic bauxites form on silicate rocks (granite, basalt, etc.) in tropical regions. In the sections below, we discuss the detailed formation processes of karst versus lateritic bauxites.
+\subsubsection{Karst Bauxite Genesis}
+\noindent\fontsize{12}{14}\selectfont Bauxite often develops nodular textures. The specimen above (from a Montenegrin deposit) shows pisolitic bauxite – rounded, concentrically layered grains cemented by iron oxides. In karst environments, such aluminum-rich residues form as limestone/dolomite bedrock is dissolved under tropical weathering. The nodules in the photo reflect how Al‐rich material accumulates in place: dissolved calcium carbonate is leached away, while alumina-bearing clays and oxides concentrate in the residual soil. In other words, karst bauxites typically develop on carbonate platforms where lateritic weathering leaves behind interbedded clay layers. As Vadász (1951) noted, these are “carbonate bauxites” formed by lateritic weathering and residual accumulation of clays as the enclosing limestone gradually dissolves.
+
+\noindent\fontsize{12}{14}\selectfont In practice, karst bauxite genesis begins with the chemical attack on the carbonate bedrock (by rainwater rich in carbonic acid) which dissolves most of the limestone or dolomite. What remains are any insoluble residues – notably clay minerals, quartz grains, and iron oxides – that were intercalated with the carbonate. Over time these residues become increasingly enriched in aluminum oxides. Importantly, studies show the limestone itself contributes almost no aluminum. Instead, additional Al often comes from detrital inputs (for example, windblown clay or volcanic ash that washed into karst depressions). Geochemical analyses indicate that a variety of protolith materials (volcaniclastic and siliciclastic sediments) are mixed into karst bauxites. In short, karst bauxites form by a combination of in situ weathering and the trapping of alumina-rich sediment: the carbonate host rock is removed, leaving behind a lateritized soil pocket rich in gibbsite (and minor boehmite) and cemented by iron oxides.
+\subsubsection{Lateritic Bauxite Genesis}
+\noindent\fontsize{12}{14}\selectfont Lateritic bauxites form thick blanket deposits under tropical climates. The Western Australian sample above shows typical pisolitic bauxite nodules resulting from extreme leaching. In these profiles, intense, years-long weathering of silicate bedrock dissolves out silica and alkalis, while aluminum hydroxides (mainly gibbsite) and iron oxides remain. The image’s concentric pisoliths are classic for lateritic bauxites, reflecting how Al oxides precipitate in place as the soil evolves.
+\noindent\fontsize{12}{14}\selectfont A characteristic lateritic profile consists of fresh rock at the bottom, overlain by a bleached “pallid” clay zone, then the bauxite horizon, and capped by an iron-rich laterite crust. The bauxite layer is extremely enriched in Al₂O₃; for example, one study of Indonesian bauxite noted silica content drops dramatically while Al₂O₃ and Fe₂O₃ rise to form hard bauxite nodules. Almost all the aluminum in a lateritic bauxite is in gibbsite form (with kaolinite usually leached away). In fact, researchers have found that granitic parent rocks tend to weather into gibbsite-dominated bauxite, whereas more mafic protoliths (andesite) may leave higher iron content – reflecting slight differences in source minerals.
+
+\noindent\fontsize{12}{14}\selectfont In essence, the lateritic genesis of bauxite is the extreme end of soil leaching. Under constant wetting and draining, silicic acid (from dissolved quartz and feldspar) is carried off, while aluminium hydroxides precipitate or remain insoluble. Good drainage is critical: if groundwater stagnates, silica is not removed effectively and residual clays (rather than gibbsite) might form. Where conditions are ideal — high rainfall, warmth, and percolating soils — the result is a relatively pure Al–O(OH) layer. This layer often lies just below an iron-rich caprock, and can cover hundreds of square kilometers in tropical highlands. In short, lateritic bauxitization converts a parent silicate rock into a cap of aluminium ores via prolonged chemical weathering
+\noindent\fontsize{12}{14}\selectfont For example, Vadász (1951) distinguished carbonate (“karst”) and silicate (“lateritic”) bauxites. Modern studies confirm that tropical weathering concentrates Al (leaving gibbsite) and that karst bauxites require external alumina inputs. 
+\subsection{Properties of Bauxite}
+\subsubsection{Physical and Morphological Properties}
+\noindent\fontsize{12}{14}\selectfont Bauxite is not a single mineral but a heterogeneous rock – basically an ore of aluminum – so its physical look and feel can vary. In general, it is an earthy, clay‐like material that forms massive deposits. The luster is dull (or earthy), not shiny, and the color is most often reddish-brown (from iron oxides) but it can also be white, tan, or gray depending on impurities. It may look like weathered, laterite rock – which often looks like a chunk of hard red clay or soft brown stone. The texture can range from powdery/earthy to fairly hard and compact, often with a mix of clay lumps and small pebble‐like structures. In fact, bauxite frequently has a pisolitic or nodule structure: it forms rounded concretions or “peas” (called pisolites) a few millimeters across, cemented together in an iron-rich matrix. These spherical grains form when mineral-laden water in tropical soils precipitates aluminum hydroxides around a tiny seed grain, layer by layer. Because of this, many bauxite samples have a characteristic nodular appearance, sometimes described as caviar-like or pisolitic.
+
+
+\noindent\fontsize{12}{14}\selectfont The texture is generally granular or massive, not crystalline – There won’t be large clear crystals in bauxite, since its main minerals (gibbsite, boehmite, diaspore) are typically fine-grained or massive. Under the microscope one sees platey or fibrous aluminum hydroxide crystals and irregular clay and iron oxide grains. Bauxite often breaks with an uneven or somewhat subconchoidal fracture, and it is brittle or crumbly rather than tough. Its hardness is relatively low with roughly Mohs scales 2–3, reflecting the soft nature of hydrated aluminum minerals (gibbsite about 2.5–3). In practice bauxite can often be scraped or ground with a rock hammer. The streak (powder color) is usually white or pale, since the fine grind of most bauxite is dominated by aluminum oxide/hydroxide and clay, though iron staining can turn it reddish.
+
+\noindent\fontsize{12}{14}\selectfont Specific gravity of bauxite is moderate – typically around 2.2 to 2.5 g/cm\textsuperscript{3}(depending on how much iron and silica is mixed in), which is similar to common clays and lighter minerals. It is noticeably lighter than, say, magnetite or quartz rocks, but heavier than pure pumice or plant material. Moist bauxite can be a bit heavier. Often bauxite contains significant moisture and is slightly porous; it may absorb water at the tiny pores between the grains. A sense of touch or knife test can usually show if it’s really aluminum ore (feeling a bit chalky or soft) versus a dense rock.
+ 
+\noindent\fontsize{12}{14}\selectfont Morphologically, bauxite deposits form in layers or pockets near the surface. Most bauxite is found as flat-lying beds or lenses just under soil or vegetation cover, which is why it is often strip-mined. The ore itself typically looks like heterogeneous chunks of the minerals – you might see small grit or sand grains of residual quartz or kaolinite clay mixed into the red clay matrix. In cross-section, older bauxite layers can show zonation: often a ferruginous (iron-rich) cap or crust on top, and the relatively aluminum-rich core below. But on the hand-specimen scale, a lump of bauxite looks like mixed-up mudstone and sand with iron stains. In hand samples, the individual aluminum minerals (gibbsite, etc.) are usually not obvious by eye, so identifying bauxite is mostly by color, association, and context. If you scratched it or shook it, you might feel fine grains and fine powder fall off; it sometimes feels a bit gritty because of the quartz and sand content.
+\subsubsection{Chemical Properties}
+\noindent\fontsize{12}{14}\selectfont Chemically, bauxite is dominated by aluminum hydroxides and oxides. Its defining feature is a very high content of alumina (Al\textsubscript{2}O\textsubscript{3}), but not in pure anhydrous form – rather it’s mostly hydrated alumina (hydroxides). The principal aluminum-bearing minerals are gibbsite [Al(OH)\textsubscript{3}], boehmite [γ-AlO(OH)], and diaspore [α-AlO(OH)]. Together these can make up well over half of bauxite by weight. In fact, bauxite is usually described by saying it “consists mostly of” those three minerals. Gibbsite and boehmite both contain substantial water by weight (gibbsite ~34\% H\textsubscript{2}O by formula), so naturally bauxite also contains a fair amount of combined water (as hydroxyl). When bauxite is calcined (heated strongly), those hydroxides dehydrate to give aluminum oxide (alumina, Al\textsubscript{2}O\textsubscript{3}), which is the goal in aluminum production.
+ 
+\noindent\fontsize{12}{14}\selectfont Aside from alumina, bauxite typically contains a variety of impurities that reflect its soil-weathering origin. Notably, iron is nearly always present as iron (III) oxides/hydroxides (goethite FeO(OH) and hematite Fe\textsubscript{2}O\textsubscript{3}). These iron minerals are what give many bauxites their red, yellow or brown colors. Also common is the clay mineral kaolinite (Al\textsubscript{2}Si\textsubscript{2}O\textsubscript{5}(OH)\textsubscript{4}) or other silicates; this brings silica (SiO\textsubscript{2}) into the mix. Trace amounts of titanium (in the form of anatase TiO\textsubscript{2}) and iron-titanium oxides (ilmenite) are often found as well. All these contribute to the typical analysis of bauxite: roughly 40–60\% Al\textsubscript{2}O\textsubscript{3} (as combined oxides/hydroxides), 5–20\% Fe\textsubscript{2}O\textsubscript{3}, 1–15\% SiO\textsubscript{2}, and a few percent TiO\textsubscript{2}, along with minor amounts of other elements. Gallium is also present in trace amounts; in fact, bauxite is the main industrial source of gallium. (During alumina refining, gallium is leached into the liquor and later recovered – but even at only ~50 ppm in many ores, Ga is a valuable byproduct.)
+ 
+\noindent\fontsize{12}{14}\selectfont The combination of aluminous and iron/silica components makes bauxite chemically amphoteric to an extent. The aluminum hydroxides can dissolve in strong acids (producing soluble Al\textsuperscript{3+} salts) and also in strong bases (forming aluminate complexes). For example, gibbsite will slowly dissolve in hydrochloric or sulfuric acid, releasing Al\textsuperscript{3+}; conversely, in the Bayer process bauxite is dissolved in hot sodium hydroxide to form sodium aluminate (with the Al-OH network breaking down in strong base). However, bauxite is essentially insoluble in plain water and in weak acids/alkalis – it only dissolves significantly in concentrated reagents because the minerals are quite refractory.
+ 
+\noindent\fontsize{12}{14}\selectfont In terms of chemical reactions: heating bauxite drives off its water (the hydroxyl groups), yielding nearly pure Al\textsubscript{2}O\textsubscript{3} plus water vapor. This alumina is the chemical target in processing. Bauxite itself, being roughly Al\textsubscript{2}O\textsubscript{3}·1–3H\textsubscript{2}O, can be described as hydrated aluminum oxide. When fused with sodium hydroxide (the Bayer process), each of the aluminum minerals gives aluminum oxide plus water, then the oxide reacts with OH⁻ to form aluminate (NaAlO\textsubscript{2}) solution. Conversely, if you treat bauxite with a strong base like NaOH without heating, you can also gradually dissolve it (much slower than calcination, but at high temperatures it dissolves readily). In strong acid like HCl, gibbsite and boehmite dissolve to give AlCl\textsubscript{3} and water. If one were to fire bauxite at very high temperature, it will convert to α-Al\textsubscript{2}O\textsubscript{3} (corundum) which is a stable, inert form; the original reactive hydroxides are no longer present after calcination.
+
+\noindent\fontsize{12}{14}\selectfont Because bauxite has this mix of oxides, its bulk chemical composition can vary. The “grade” of a bauxite (e.g. metallurgical grade) is judged by its content of Al\textsubscript{2}O\textsubscript{3} relative to silica and Fe\textsubscript{2}O\textsubscript{3}. High-grade bauxites have lots of Al, little silica, moderate Fe. Low-grade ones have more gangue (clay or quartz), which must be removed. One might say typical good bauxite is 50\% Al\textsubscript{2}O\textsubscript{3}, 15\% Fe\textsubscript{2}O\textsubscript{3}, 3\% SiO\textsubscript{2}, 5\% TiO\textsubscript{2} (by oxide weight), etc., although the exact mix depends on deposit.
+\noindent\fontsize{12}{14}\selectfont Overall, the properties of bauxite are those of a clay-rich, iron-stained aluminum ore: dull earth-tones, soft/crumbly texture with nodules, and a chemical makeup overwhelmingly based on Al(OH)\textsubscript{3}/AlO(OH) compounds. These combined physical and chemical traits explain why bauxite is the world’s most important aluminum ore – it’s rich in aluminum-bearing minerals and behaves predictably under processing conditions.
+\subsection{Metals Extracted}
+\subsubsection{Metals and Alumina Extraction from Bauxite}
+\noindent\fontsize{12}{14}\selectfont Bauxite is the primary ore of aluminum which usually contain 30–60\% alumina (Al\textsubscript{2}O\textsubscript{3}). It consists of hydrated aluminum minerals (gibbsite Al(OH)\textsubscript{3}, boehmite, diaspore) mixed with impurities such as iron oxides and silica. When refined, bauxite yields mostly aluminum (via alumina), but it also contains trace quantities of other metals. Below we review the key metals obtained from bauxite and outline the Bayer alumina-extraction process.
+\subsubsection{Metals Extracted from Bauxite}
+\begin{itemize}[label=\textbullet]  % Circle bullet
+\item \textbf{Aluminum (Al):} Aluminum is the main metal. Around 85\% of bauxite is used to produce aluminum, 8\% is used to produce alumina chemicals and 7\% is used for abrasives, refractories, proppants and in cement. Depending on the ore grade, 4-6 tons of bauxite are required to refine into 2 tons of alumina, which in turn is smelted to make approximately 1 tons of aluminum metal.
+
+\begin{figure}[h!]
+        \centering \includegraphics[width=0.87\textwidth, height=100pt]{5.png}  % Adjust width and height
+        \caption{Bauxite Ore}
+    \end{figure} 
+    
+\item \textbf{Gallium (Ga):} Gallium is a valuable byproduct which even at only ∼10–60 ppm, gallium is commercially valuable Bauxite is the world’s largest source of Galena. In the Bayer process, gallium dissolves in the caustic liquor with aluminum, and recovered using techniques like solvent extraction. All of today’s gallium is produced as a byproduct of bauxite refining. However, only small amount of the gallium in the ore ends up in the alumina. For example, at ∼50 ppm Ga in the feed, only about 10–15\% of the Ga is extracted into the Bayer liquor, with the remainder remaining in the red-mud waste.
+\item \textbf{Vanadium (V):} Often present as V₂O₅ in bauxite. In Bayer refining, vanadium stays mostly in the solid residue (red mud), but it can be recovered from that residue by special processing. Some alumina plants leach or roast the red mud and precipitate vanadium compounds, so that vanadium is obtained as a byproduct.
+\item \textbf{Other trace metals:} Some bauxites contain other metals in small amounts. Niobium (Nb) and scandium (Sc) can occur at hundreds to tens of ppm; rare-earth elements (REEs) are also found. These are not recovered in standard refining (though they concentrate in the residue). USGS notes that bauxite can contain significant Nb, Sc, and REEs, but extracting them from the Bayer residue is not currently economical. Thus, these trace metals remain mostly in the waste stream.
+\end{itemize}
+\subsubsection{Extraction of Alumina (Bayer Process)}
+\noindent\fontsize{12}{14}\selectfont The Bayer process is the standard method in the industry for refining bauxite into alumina (Al₂O₃). As of 2010, about 70–80\% of the world’s bauxite was refined by this method. It is an aqueous chemical method where bauxite is dissolved in hot sodium hydroxide, aluminum is precipitated out, and finally the product is calcined. The main steps are:
+\begin{enumerate}[label=\arabic*.]  % Arabic numerals with a period after
+    \item \textbf{Digestion:} Crushed bauxite is mixed with concentrated NaOH and heated (typically 150–200 °C under pressure). Under these conditions, the aluminum hydroxides dissolve to form soluble sodium aluminate (NaAl(OH)\textsubscript{4}). Essentially all the alumina goes into solution. Different bauxite minerals dissolve at different rates (gibbsite dissolves readily around 100 °C, whereas boehmite/diaspore require higher T). Because reactive silica (clay) does not dissolve and would consume alkali, high-silica ores often undergo a pre-desilication step.
+    \item \textbf{Clarification:} The slurry is allowed to settle or is filtered to separate out the solids. The insoluble “red mud” residue – composed of iron oxides, silica, titania, and other impurities is removed. The clear sodium aluminate liquor (the “pregnant solution”) contains the dissolved aluminum.
+    \item \textbf{Precipitation:} The aluminate liquor is cooled and seeded with fine Al(OH)\textsubscript{3} crystals. As it cools, aluminum hydroxide (gibbsite) precipitates out. This essentially reverses the digestion step. The solid Al(OH)₃ is collected by filtration or settling, leaving most other chemicals in solution.
+    \item \textbf{Calcination:} The collected Al(OH)\textsubscript{3} is heated (about 1000–1100 °C) to drive off water and form anhydrous alumina (Al\textsubscript{2}O\textsubscript{3}). The result is a white alumina powder (≥99\% Al\textsubscript{2}O\textsubscript{3}).
+\end{enumerate}
+\noindent\fontsize{12}{14}\selectfont Each step strips aluminum from the ore. Modern plants recycle the caustic soda by washing the red mud to reclaim NaOH. A well-operated Bayer plant extracts ~90–95\% of the aluminum from bauxite, with the leftover red mud (often several times the alumina mass) containing virtually no Al.
+\noindent\fontsize{12}{14}\selectfont Finally, the alumina powder is reduced to metallic aluminum by the Hall–Héroult process. In that step, alumina is dissolved in molten cryolite and reduced by an electric current to yield aluminum metal.
+\newpage
+\section{Source code}
+You can download or view the LaTeX source code for this document from the link below:
+\vspace{0.5cm}
+
+\noindent\fontsize{12}{14}\selectfont \textcolor{blue} { \href{https://github.com/Sachin-mihijaya/Mineral-technology-assignment-03/blob/main/Mineral.tex}{Click here to view the LaTeX source code}
+}
+\newpage
+\section{References}
+{\fontfamily{ptm}\selectfont
+\begin{enumerate}
+    \item \raggedright Sustainable Bauxite Mining Guidelines, Second Edition 2022:
+    \url{https://international-aluminium.org/}
+    
+    \item ORIGIN OF BAUXITE - Selected papers reprinted from Geonotes and the Journal of the Geological Society of Jamaica – 1977
+
+    \item Geochemistry and genesis of the bauxite deposit around yercaud, district salem, tamil-nadu - department of geology faculty of science aligarh muslim university aligarh 1984
+
+    \item History of Bauxite in Arkansas, A.G.E.S. Brochure series 003
+
+    \item Bauxite, Australian Bauxite Will Help Meet Global Demand For Aluminum, Fact sheet 2, Australien Aluminum Council LTD
+    \item \raggedright Barthelmy, D. (n.d.). Magnetite Mineral data. \url{https://webmineral.com/data/Magnetite.shtml}
+    \item \raggedright King, H. M. (n.d.). Magnetite \& Lodestone | Mineral Photos, Uses, Properties. \url{https://geology.com/minerals/magnetite.shtml}
+    \item \raggedright De Jesus Andrade Fidelis, R., Pires, M., De Resende, D. S., Lima, G. F. C., De Paiva, P. R. P., \& Da Silva Bezerra, A. C. (2025). Magnetite: Properties and applications – A review. Journal of Magnetism and Magnetic Materials, 614, 172770. \url{https://doi.org/10.1016/j.jmmm.2025.172770}
+    \item Nicolosi, G. (2022, November 22). 4 Methods and stages of extracting iron from magnetite. Seamaster Maritime \& Logistics. \url{https://seamaster.co.za/magnetite-beneficiation/}
+    \item \raggedright Extraction of iron, iron mining, iron ore processing. (n.d.).
+    \url{https://www.xinhaimining.com/dynamic/guide-iron-processing-technology}
+    \item \raggedright Galena. (2021, April 26). WGNHS. \url{https://home.wgnhs.wisc.edu/minerals/galena/}
+    \item \raggedright Galena | Common Minerals. (n.d.). \url{https://commonminerals.esci.umn.edu/minerals-g-m/galena}
+    \item \raggedright King, H. M. (n.d.). Galena Mineral | Uses and Properties. \url{https://geology.com/minerals/galena.shtml}
+    \item \raggedright Mat, M. (2023, September 4). Galena. Geology Science. \url{https://geologyscience.com/minerals/galena/}
+    \item \raggedright Galloway, D. L. M. D. a. S. B. C. M. a. J. P. (n.d.). Podiform Chromite Deposits--Database and Grade and Tonnage models. \url{https://pubs.usgs.gov/sir/2012/5157/#:~:text=Chromite%20%28%28Mg%2C%20Fe%2B%2B%29%28Cr%2C%20Al%2C%20Fe%2B%2B%2B%29_,ophiolite%20complex%20in%20the%20oceanic}
+    \item \raggedright King, H. M. (n.d.). Chromite:  The only mineral ore of chromium metal. \url{https://geology.com/minerals/chromite.shtml#:~:text=Podiform%20deposits%20are%20large%20slabs,Philippines%2C%20Zimbabwe%2C%20Cyprus%2C%20and%20Greece}
+    \item \raggedright Hematite – Welcome to Chivine. (n.d.). \url{https://chivine-us.com/industrial-minerals/hematite/}
+    \item \raggedright Mat, M. (2023, September 8). Hematite. Geology Science. \url{https://geologyscience.com/minerals/hematite/}
+\end{enumerate}
+\end{document}
